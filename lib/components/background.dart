@@ -12,23 +12,23 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return  SizedBox(
         height: size.height,
         width: double.infinity,
         child: Stack(
           alignment: Alignment.center,
           children: [
             Positioned(
-              top: -35,
-              left: -35,
+              top: -40,
+              left: -40,
               child: Image.asset(
                 'assets/bg-auth-welcome-top.png',
                 width: size.width * 0.4,
               ),
             ),
             Positioned(
-              bottom: -35,
-              right: -35,
+              bottom: -40,
+              right: -40,
               child: Image.asset(
                 'assets/bg-auth-welcome-bottom.png',
                 width: size.width * 0.4,

@@ -6,6 +6,9 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Body());
+    Size size = MediaQuery.of(context).size; // This size provide us total heiggt and width of our screen
+    return  Scaffold(
+      body: Body(size: size)
+    );
   }
 }
