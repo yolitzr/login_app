@@ -11,7 +11,8 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size; // This size provide us total heiggt and width of our screen
+    Size size = MediaQuery.of(context)
+        .size; // This size provide us total height and width of our screen
     return Background(
         size: size,
         child: SingleChildScrollView(
@@ -35,11 +36,11 @@ class Body extends StatelessWidget {
               SizedBox(height: size.height * 0.02),
               RoundedButton(
                 size: size,
-                onPressed: () { 
+                onPressed: () {
                   Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const LoginScreen())
-                  );
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const LoginScreen()));
                 },
                 text: 'Login',
                 bgColor: bgButton,
@@ -57,4 +58,3 @@ class Body extends StatelessWidget {
         ));
   }
 }
-
